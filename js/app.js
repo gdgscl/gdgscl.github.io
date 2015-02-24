@@ -1,3 +1,5 @@
+'use strict'
 $(document).ready(function() {
-    $('#vitejte .modal-body').load('udalosti/nebojtesesvg_marekraida.html article');
+	var nextEventHref = $('#udalosti .next-event a').attr("href");
+    $('#vitejte .modal-body').load(nextEventHref.concat(' article'));
 });
