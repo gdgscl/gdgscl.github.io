@@ -11,10 +11,14 @@ h1, h2, h3, h4, h5, h6{
 }
 //article
 article{
+	@media print {
+  		a[href]:after {
+    		content: none !important;
+  		}
+	}
 	background-color: #fff;
 	padding: 20px;
 	.page{
-		page-break-after: always;
 	}
 	.article-abstract, .article-bio{
 		.text-justify;
@@ -27,7 +31,18 @@ article{
 			.center-block;
 			.img-responsive;
 	}
-	a.article-profile-handle {
+	.article-page-link{
+		text-align: center;
+		display: none;
+		@media print {
+			position: fixed;
+			bottom: 0px;
+			display: block;
+			text-align: center;
+			left: 50%;
+	    }
+	}
+	a.article-profile-handle{
 			color: @gray;
 			margin-bottom: 10px;
 			margin-top: -10px;
@@ -38,7 +53,7 @@ article{
 	}
 	h1{
 		font-weight: bold;
-		font-size: 60pt;
+		font-size: 55pt;
 	}
 	h2{
 		font-size: 28px;
