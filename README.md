@@ -1,7 +1,7 @@
 GDGSCL
 ============
 Statický web pro Google Developer Group - Spaghetti Code Liberec
-gdg.tul.cz
+gdgscl.github.io
 
 TODO
 ============
