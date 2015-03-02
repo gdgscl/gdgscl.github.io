@@ -8,7 +8,11 @@ var startTime = function startTime() {
     var s=today.getSeconds();
     if (m<10) m = "0" + m;
     if (s<10) s = "0" + s;
-    $('.clock').each(function(){$(this).html(h+":"+m+":"+s);});
+    $('.clock').each(function(){
+        $(this).find('.hours').html(h);
+        $(this).find('.minutes').html(m);
+        $(this).find('.seconds').html(s);
+    });
     var t = setTimeout(function(){startTime()},500);
 }
 
