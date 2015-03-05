@@ -16,10 +16,14 @@ var startTime = function startTime() {
     var t = setTimeout(function(){startTime()},500);
 }
 
-$(document).ready(function() {
-	startTime();
-	var nextEvent = $('#udalosti .next-event a').text();
+var initWelcome = function(){
+    startTime();
+    var nextEvent = $('#udalosti .next-event a').text();
     $('#vitejte h1').text(nextEvent);
+}
+
+$(document).ready(function() {
+    initWelcome();
 });
 
 };
