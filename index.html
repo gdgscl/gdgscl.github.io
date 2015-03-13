@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="cs">
-  <head>
+
+<head>
+    <!-- Google Font -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans|Dosis" rel="stylesheet" type="text/css" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google-site-verification" content="0RzKW88mbH_fZIxH0AAVtfbKibMiZ6YM5n8bqxp5Jtg" />
+    <meta name="description" content="Spaghetti Code je neformální setkání Libereckých vývojářů se zájmem nejen o webové technologie. Potkejte se s lidmi, kteří se angažují v oblasti webových technologií, vedení projektů a zajímavých startupů. Přijďte se něco nového naučit, či se jen s ostatními poradit.">
+    <meta property="og:title" content="GDG Spaghetti Code Liberec">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://www.gdgscl.github.io/">
+    <meta property="og:image" content="http://www.gdgscl.github.io/img/gdgscl.svg">
+    <meta property="og:site_name" content="GDG Spaghetti Code Liberec">
+    <meta property="og:description" content="Spaghetti Code je neformální setkání Libereckých vývojářů se zájmem nejen o webové technologie. Potkejte se s lidmi, kteří se angažují v oblasti webových technologií, vedení projektů a zajímavých startupů. Přijďte se něco nového naučit, či se jen s ostatními poradit.">
     <title>GDG Spaghetti Code Liberec</title>
-    <!-- Google Font -->
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans|Dosis" rel="stylesheet" type="text/css" />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <!-- App css -->
     <link href="css/app.css" rel="stylesheet" type="text/css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -18,219 +25,257 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
-  <body data-spy="scroll" data-target="#navigation">
+</head>
+
+<body data-spy="scroll" data-target="#navigation">
     <!-- vitejte modal -->
     <div id="vitejte" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title text-center">Vítejte na dnešní události!</h4>
-          </div>
-          <div class="modal-body text-center">
-            <img class="img img-responsive center-block" src="/img/gdgscl.svg" alt="gdgscl">
-            <h1></h1>
-            <h2 class="clock">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title text-center">Vítejte na dnešní události!</h4>
+                </div>
+                <div class="modal-body text-center">
+                    <img class="img img-responsive center-block" src="/img/gdgscl.svg" alt="gdgscl">
+                    <h1></h1>
+                    <h2 class="clock">
               <span class="hours"></span>
               <span class="separator">:</span>
               <span class="minutes"></span>
               <span class="separator">:</span>
               <span class="seconds"></span>
             </h2>
-            <p class="lead">Wifi - GDG | Password - 486gdgSCL</p>
-            <div>
-              <a href="https://www.facebook.com/GDGSpaghettiCodeLiberec" class="btn btn-social btn-facebook" ><span class="fa fa-facebook"></span></a>
-              <a href="https://plus.google.com/113924472420940718852" class="btn btn-social btn-google-plus"><span class="fa fa-google-plus"></span></a>
-              <a href="https://twitter.com/GDGSCL" class="btn btn-social btn-twitter"><span class="fa fa-twitter"></span></a>
-              <a href="https://www.youtube.com/channel/UCnIOqhaYbCBVCA7JiMORJzQ" class="btn btn-social btn-youtube"><span class="fa fa-youtube"></span></a>
+                    <p class="lead">Wifi - GDG | Password - 486gdgSCL</p>
+                    <div>
+                        <a href="https://www.facebook.com/GDGSpaghettiCodeLiberec" class="btn btn-social btn-facebook"><span class="fa fa-facebook"></span></a>
+                        <a href="https://plus.google.com/113924472420940718852" class="btn btn-social btn-google-plus"><span class="fa fa-google-plus"></span></a>
+                        <a href="https://twitter.com/GDGSCL" class="btn btn-social btn-twitter"><span class="fa fa-twitter"></span></a>
+                        <a href="https://www.youtube.com/channel/UCnIOqhaYbCBVCA7JiMORJzQ" class="btn btn-social btn-youtube"><span class="fa fa-youtube"></span></a>
+                    </div>
+                    <!-- img class="img img-responsive center-block" src="/img/qr.png" alt="qr" -->
+                    <p><span class="fa fa-link"></span> <a href="https://gdgscl.github.io">gdgscl.github.io</a>
+                    </p>
+                </div>
             </div>
-            <!-- img class="img img-responsive center-block" src="/img/qr.png" alt="qr" -->
-            <p><span class="fa fa-link"></span> <a href="https://gdgscl.github.io">gdgscl.github.io</a></p>
-          </div>
         </div>
-      </div>
     </div>
     <!-- udalost modal -->
     <div id="udalost" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title">Událost</h4>
-          </div>
-          <div class="modal-body">
-            Událost
-          </div>
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title">Událost</h4>
+                </div>
+                <div class="modal-body">
+                    Událost
+                </div>
+            </div>
         </div>
-      </div>
     </div>
     <!-- navigace -->
     <nav id="navigation" class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Rozbalit / Zabalit</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">#GDGSCL</a>
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Rozbalit / Zabalit</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">#GDGSCL</a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right" role="tablist">
+                    <li><a href="#oskupine">Spaghetti Code</a>
+                    </li>
+                    <li><a href="#udalosti">Události</a>
+                    </li>
+                    <li><a href="#kdesledovat">Sociální sítě</a>
+                    </li>
+                    <li><a href="#organizatori">Organizátoři</a>
+                    </li>
+                    <li class="hidden-xs"><a href="#" data-toggle="modal" data-target="#vitejte"><span class="fa fa-angle-right"></span></a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-right" role="tablist">
-            <li><a href="#oskupine">Spaghetti Code</a></li>
-            <li><a href="#udalosti">Události</a></li>
-            <li><a href="#kdesledovat">Sociální sítě</a></li>
-            <li><a href="#organizatori">Organizátoři</a></li>
-            <li class="hidden-xs"><a href="#" data-toggle="modal" data-target="#vitejte"><span class="fa fa-angle-right"></span></a></li>
-          </ul>
-        </div>
-      </div>
     </nav>
     <!-- header -->
     <header id="header">
-      <img src="./img/square.svg" alt="gdg-logo">
-      <h1><span>Google developer group</span></h1>
-      <p><span>Spaghetti Code Liberec</span></p>
+        <img src="./img/square.svg" alt="gdg-logo">
+        <h1><span>Google developer group</span></h1>
+        <p><span>Spaghetti Code Liberec</span>
+        </p>
     </header>
     <!-- oskupine -->
     <section id="oskupine">
-      <div class="container">
-        <h1>Spaghetti Code</h1>
-        <p class="lead text-justify">
-          Spaghetti Code je neformální setkání Libereckých vývojářů se zájmem nejen o webové technologie. Potkejte se s lidmi, kteří se angažují v oblasti webových technologií, vedení projektů a zajímavých startupů. Přijďte se něco nového naučit, či se jen s ostatními poradit. Jsme <a href ="http://www.gug.cz/cs/gdg/skupiny/spaghetti-code-liberec">Google Developer Group</a>, skočte k nám na kus řeči...
-        </p>
-        <div class="row">
-          <div class="col-xs-12 col-sm-6 col-lg-3">
-            <div class="well">
-              <span class="fa fa-terminal"></span>
-              <h3>Co děláme</h3>
-              <p>
-                Snažíme se sdružovat libereckou vývojářskou scénu a vytvářet tak inspirativní prostředí pro zajímavá setkání, profesní rozvoj, výměnu zkušeností či navázání zajímavých kontaktů.
-              </p>
+        <div class="container">
+            <h1>Spaghetti Code</h1>
+            <p class="lead text-justify">
+                Spaghetti Code je neformální setkání Libereckých vývojářů se zájmem nejen o webové technologie. Potkejte se s lidmi, kteří se angažují v oblasti webových technologií, vedení projektů a zajímavých startupů. Přijďte se něco nového naučit, či se jen s ostatními poradit. Jsme <a href="http://www.gug.cz/cs/gdg/skupiny/spaghetti-code-liberec">Google Developer Group</a>, skočte k nám na kus řeči...
+            </p>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-lg-3">
+                    <div class="well">
+                        <span class="fa fa-terminal"></span>
+                        <h3>Co děláme</h3>
+                        <p>
+                            Snažíme se sdružovat libereckou vývojářskou scénu a vytvářet tak inspirativní prostředí pro zajímavá setkání, profesní rozvoj, výměnu zkušeností či navázání zajímavých kontaktů.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-lg-3">
+                    <div class="well">
+                        <span class="fa fa-calendar-o"></span>
+                        <h3>Kdy</h3>
+                        <p>
+                            Obvykle pořádáme <strong>každé první úterý v měsíci</strong> přednášku se zajímavým hostem, snažíme se však také poskytovat platformu, kterou je možné rozšiřovat o další zajímavá setkání.
+                        </p>
+                    </div>
+                </div>
+                <div class="clearfix visible-md-block visible-sm-block"></div>
+                <div class="col-xs-12 col-sm-6 col-lg-3">
+                    <div class="well">
+                        <span class="fa fa-map-marker"></span>
+                        <h3>Kde</h3>
+                        <p>Místo setkání je vždy uvedeno v pozvánce, nejčastěji je to však <strong>posluchárna A11 ve třetím patře budovy A, Technické univerzity v Liberci</strong>. (<a href="https://www.google.cz/maps/place/Hálkova+917%2F6,+460+01+Liberec">Hálkova 917/6, 460 01 Liberec</a>)</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-lg-3">
+                    <div class="well">
+                        <span class="fa fa-users"></span>
+                        <h3>Pro koho</h3>
+                        <p>
+                            Jsme otevření a přátelští, pokud tedy není uvedeno jinak, tak jsou naše akce přístupné <strong>zdarma</strong> pro širokou veřejnost. Za zkoušku tedy nic nedáte, tak brzy naviděnou!
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-lg-3">
-            <div class="well">
-              <span class="fa fa-calendar-o"></span>
-              <h3>Kdy</h3>
-              <p>
-                Obvykle pořádáme <strong>každé první úterý v měsíci</strong> přednášku se zajímavým hostem, snažíme se však také poskytovat platformu, kterou je možné rozšiřovat o další zajímavá setkání.
-              </p>
-            </div>
-          </div>
-          <div class="clearfix visible-md-block visible-sm-block"></div>
-          <div class="col-xs-12 col-sm-6 col-lg-3">
-            <div class="well">
-              <span class="fa fa-map-marker"></span>
-              <h3>Kde</h3>
-              <p>Místo setkání je vždy uvedeno v pozvánce, nejčastěji je to však <strong>posluchárna A11 ve třetím patře budovy A, Technické univerzity v Liberci</strong>. (<a href ="https://www.google.cz/maps/place/Hálkova+917%2F6,+460+01+Liberec">Hálkova 917/6, 460 01 Liberec</a>)</p>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-lg-3">
-            <div class="well">
-              <span class="fa fa-users"></span>
-              <h3>Pro koho</h3>
-              <p>
-                Jsme otevření a přátelští, pokud tedy není uvedeno jinak, tak jsou naše akce přístupné <strong>zdarma</strong> pro širokou veřejnost. Za zkoušku tedy nic nedáte, tak brzy naviděnou!
-              </p>
-            </div>
-          </div>
+            <p class="text-center"><em>Jsme programátoři, studenti, učitelé a spolupracujeme s <a href ="http://www.tul.cz">Technickou univerzitou v Liberci</a>.</em>
+            </p>
+            <img class="img img-responsive center-block" src="http://www.tul.cz/incl/img/logocz.png" width="300" alt="tul-logo">
         </div>
-        <p class="text-center"><em>Jsme programátoři, studenti, učitelé a spolupracujeme s <a href ="http://www.tul.cz">Technickou univerzitou v Liberci</a>.</em></p>
-        <img class="img img-responsive center-block" src="http://www.tul.cz/incl/img/logocz.png" width="300" alt="tul-logo">
-      </div>
     </section>
     <!-- udalosti -->
     <section id="udalosti">
-      <div class="container">
-        <h1>Události</h1>
-        <h2>2015</h2>
-        <ul>
-          <li class="next-event">
-            <a href="./udalosti/solaris_oracle.html">Solaris - Oracle</a>
-          </li>
-          <li>
-            <a href="./udalosti/webova_bezpecnost_michal_spacek.html"><s>Webová bezpečnost - Michal Špaček</s></a>
-          </li>
-          <li><a href="./udalosti/google_analytics_jan_tichy.html"><s>Google Analytics - Jan Tichý</s></a></li>
-          <li><a href="./udalosti/html5_jiri_kosek.html"><s>HTML5 - Jiří Kosek</s></a></li>
-        </ul>
-        <h2>2014</h2>
-        <ul>
-          <li><a href="./udalosti/nebojte_se_svg_marek_raida.html"><s>Nebojte se SVG - Marek Raida</s></a></li>
-          <li><a href="./udalosti/hrozby_na_webu_avast_team.html"><s>Hrozby na webu - Avast team</s></a></li>
-        </ul>
-      </div>
+        <div class="container">
+            <h1>Události</h1>
+            <h2>2015</h2>
+            <ul>
+                <li class="next-event">
+                    <a href="./udalosti/solaris_oracle.html">Solaris - Oracle</a>
+                </li>
+                <li>
+                    <a href="./udalosti/webova_bezpecnost_michal_spacek.html">
+                        <s>Webová bezpečnost - Michal Špaček</s>
+                    </a>
+                </li>
+                <li>
+                    <a href="./udalosti/google_analytics_jan_tichy.html">
+                        <s>Google Analytics - Jan Tichý</s>
+                    </a>
+                </li>
+                <li>
+                    <a href="./udalosti/html5_jiri_kosek.html">
+                        <s>HTML5 - Jiří Kosek</s>
+                    </a>
+                </li>
+            </ul>
+            <h2>2014</h2>
+            <ul>
+                <li>
+                    <a href="./udalosti/nebojte_se_svg_marek_raida.html">
+                        <s>Nebojte se SVG - Marek Raida</s>
+                    </a>
+                </li>
+                <li>
+                    <a href="./udalosti/hrozby_na_webu_avast_team.html">
+                        <s>Hrozby na webu - Avast team</s>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </section>
     <!-- kdesledovat -->
     <section id="kdesledovat">
-      <div class="container">
-        <h1>Kde nás sledovat</h1>
-        <p class="text-center"><em>Pokud nás chcete kontaktovat, napište naší skupině na facebooku nebo na google plus, případně mailem na: gdgscl@gmail.com</em></p>
-        <div class="text-center">
-          <a href="https://www.facebook.com/GDGSpaghettiCodeLiberec" class="btn btn-social btn-facebook" ><span class="fa fa-facebook"></span></a>
-          <a href="https://plus.google.com/113924472420940718852" class="btn btn-social btn-google-plus"><span class="fa fa-google-plus"></span></a>
-          <a href="https://twitter.com/GDGSCL" class="btn btn-social btn-twitter"><span class="fa fa-twitter"></span></a>
-          <a href="https://github.com/gdgscl" class="btn btn-social btn-github"><span class="fa fa-github"></span></a>
-          <a href="https://www.youtube.com/channel/UCnIOqhaYbCBVCA7JiMORJzQ" class="btn btn-social btn-youtube"><span class="fa fa-youtube"></span></a>
-          <a href="http://www.gug.cz/cs/gdg/skupiny/spaghetti-code-liberec" class="btn btn-social btn-web"><span class="fa fa-link"></span></a>
-          <a href="mailto:gdgscl@gmail.com" class="btn btn-social btn-mail"><span class="fa fa-envelope-o"></span></a>
+        <div class="container">
+            <h1>Kde nás sledovat</h1>
+            <p class="text-center"><em>Pokud nás chcete kontaktovat, napište naší skupině na facebooku nebo na google plus, případně mailem na: gdgscl@gmail.com</em>
+            </p>
+            <div class="text-center">
+                <a href="https://www.facebook.com/GDGSpaghettiCodeLiberec" class="btn btn-social btn-facebook"><span class="fa fa-facebook"></span></a>
+                <a href="https://plus.google.com/113924472420940718852" class="btn btn-social btn-google-plus"><span class="fa fa-google-plus"></span></a>
+                <a href="https://twitter.com/GDGSCL" class="btn btn-social btn-twitter"><span class="fa fa-twitter"></span></a>
+                <a href="https://github.com/gdgscl" class="btn btn-social btn-github"><span class="fa fa-github"></span></a>
+                <a href="https://www.youtube.com/channel/UCnIOqhaYbCBVCA7JiMORJzQ" class="btn btn-social btn-youtube"><span class="fa fa-youtube"></span></a>
+                <a href="http://www.gug.cz/cs/gdg/skupiny/spaghetti-code-liberec" class="btn btn-social btn-web"><span class="fa fa-link"></span></a>
+                <a href="mailto:gdgscl@gmail.com" class="btn btn-social btn-mail"><span class="fa fa-envelope-o"></span></a>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <!-- kdojsme -->
-  <section id="organizatori">
-    <div class="container">
-      <h1>Organizátoři</h1>
-      <div class="row">
-        <div class="col-xs-12 col-sm-6 col-lg-3">
-          <div class="orgbadge-wrapper">
-            <div class="g-person" data-width="250" data-layout="landscape" data-href="//plus.google.com/u/0/+RadimDanielPánek" data-rel="author"></div>
-          </div>
         </div>
-        <div class="col-xs-12 col-sm-6 col-lg-3">
-          <div class="orgbadge-wrapper">
-            <div class="g-person" data-width="250" data-layout="landscape" data-href="//plus.google.com/u/0/108260870017539123853" data-rel="author"></div>
-          </div>
+    </section>
+    <!-- kdojsme -->
+    <section id="organizatori">
+        <div class="container">
+            <h1>Organizátoři</h1>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-lg-3">
+                    <div class="orgbadge-wrapper">
+                        <div class="g-person" data-width="250" data-layout="landscape" data-href="//plus.google.com/u/0/+RadimDanielPánek" data-rel="author"></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-lg-3">
+                    <div class="orgbadge-wrapper">
+                        <div class="g-person" data-width="250" data-layout="landscape" data-href="//plus.google.com/u/0/108260870017539123853" data-rel="author"></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-lg-3">
+                    <div class="orgbadge-wrapper">
+                        <div class="g-person" data-width="250" data-layout="landscape" data-href="//plus.google.com/u/0/+JanGabriel" data-rel="author"></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-lg-3">
+                    <div class="orgbadge-wrapper">
+                        <div class="g-person" data-width="250" data-layout="landscape" data-href="//plus.google.com/u/0/+JirkaVrany" data-rel="author"></div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center text-muted">A mnoho dalších...</p>
         </div>
-        <div class="col-xs-12 col-sm-6 col-lg-3">
-          <div class="orgbadge-wrapper">
-            <div class="g-person" data-width="250"  data-layout="landscape"data-href="//plus.google.com/u/0/+JanGabriel" data-rel="author"></div>
-          </div>
+    </section>
+    <footer id="footer">
+        <div class="container">
+            <p>Pro GDGSCL s <span class="fa fa-heart"></span> <a href="http://jxg.cz/">JG</a>.</p>
         </div>
-        <div class="col-xs-12 col-sm-6 col-lg-3">
-          <div class="orgbadge-wrapper">
-            <div class="g-person" data-width="250" data-layout="landscape" data-href="//plus.google.com/u/0/+JirkaVrany" data-rel="author"></div>
-          </div>
-        </div>
-      </div>
-      <p class="text-center text-muted">A mnoho dalších...</p>
-    </div>
-  </section>
-  <footer id="footer">
-    <div class="container">
-      <p>Pro GDGSCL s <span class="fa fa-heart"></span> <a href="http://jxg.cz/">JG</a>.</p>
-    </div>
-  </footer>
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js "></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="js/essentials.min.js "></script>
-  <!-- Google plus social plugins -->
-  <script src="https://apis.google.com/js/platform.js" async defer></script>
-  <!-- Google Analytics -->
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js "></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/essentials.min.js "></script>
+    <!-- Google plus social plugins -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <!-- Google Analytics -->
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
     ga('create', 'UA-59807213-1', 'auto');
     ga('send', 'pageview');
-  </script>
-  <!-- App specific js -->
-  <script src="js/app.js"></script>
+    </script>
+    <!-- App specific js -->
+    <script src="js/app.js"></script>
 </body>
+
 </html>
