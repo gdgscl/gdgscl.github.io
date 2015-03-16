@@ -22,9 +22,22 @@ var initWelcome = function(){
     $('#vitejte h1').text(nextEvent);
 }
 
+var addScrollEasing = function() {
+    $('nav ul li a').each(function() {
+        $(this).click(function(e) {
+            $("html, body").animate({
+                scrollTop: $($(this).attr('href')).offset().top
+            }, 800);
+            e.preventDefault();
+        });
+    });
+}
+
 $(document).ready(function() {
     initWelcome();
+    addScrollEasing();
+    
 });
-
+    
 };
 gdgscl();
