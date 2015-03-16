@@ -23,7 +23,7 @@ var initWelcome = function(){
 }
 
 var addScrollEasing = function() {
-    $('nav ul li a').each(function() {
+    $('nav ul li a').not('[data-toggle]').each(function() {
         $(this).click(function(e) {
             $("html, body").animate({
                 scrollTop: $($(this).attr('href')).offset().top
