@@ -5,5 +5,6 @@ gdgscl.github.io
 
 TODO
 ============
-+ Doplnit události a udělat k nim načítaní do modalu
-+ Vytvorit welcome modal s wifi, hostem, socialnimi sitemi a casem
++ udělat lépe a přehledněji sekci události
++ události se načítaji do modálu a mají link na tiskovou verzi
++ analytics eviduje načítaní do modálu
